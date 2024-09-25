@@ -1,13 +1,12 @@
 import React from 'react'
+import LikeButton from './component/LikeButton'
 
 const App = () => {
-
-  const list = ["apple", "banana", "cherry"];
   return (
-    <div>
-      {list.map((item, index) => <p key={index}>{item} {index}</p>)}
+    <div className="flex justify-center items-center text-9xl text-red-600 ">
+      <LikeButton />
     </div>
-  )
+  );
 }
 
 export default App
