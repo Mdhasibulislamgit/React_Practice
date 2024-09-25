@@ -1,15 +1,10 @@
-const Product = ({ title, description, feature, feature2, }) => {
+const Product = (Product) => {
   return (
     <div>
-      <h1>Product Page</h1>
-      
-      <h4>{title}</h4>
-      <p>{description}</p>
-      <p>Features: {feature}</p>
-      <p>Features 2: {feature2}</p>
-      
+      <h1>Product</h1>
+      <p>{Product.product.name}</p>
+      <p>{Product.product.price}</p>
     </div>
   );
 };
-
 export default Product;
